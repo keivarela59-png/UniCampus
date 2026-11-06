@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniCampus | Portal Académico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">UC</div>
+            <div>
+                <h2>UniCampus</h2>
+                <span>PORTAL ACADÉMICO</span>
+            </div>
+        </div>
+
+        <div class="menu-title">MENÚ PRINCIPAL</div>
+
+        <nav class="menu">
+            <button class="menu-btn active" onclick="mostrar('inicio', this)">
+                <span>▦</span> Panel de control
+            </button>
+
+            <button class="menu-btn" onclick="mostrar('cursos', this)">
+                <span>▤</span> Mis cursos
+            </button>
+
+            <button class="menu-btn" onclick="mostrar('notas', this)">
+                <span>▥</span> Calificaciones
+            </button>
+
+            <button class="menu-btn" onclick="mostrar('prematricula', this)">
+                <span>＋</span> Prematrícula
+            </button>
+
+            <button class="menu-btn" onclick="mostrar('horario', this)">
+                <span>◷</span> Horario académico
+            </button>
+
+            <button class="menu-btn" onclick="mostrar('carne', this)">
+                <span>▣</span> Carné digital
+            </button>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="system-status">
+                <span class="online-dot"></span>
+                Sistema operativo
+                <small>Todos los servicios disponibles</small>
+            </div>
+            <p>UniCampus © 2026</p>
+            <p>Versión 1.0.0</p>
+        </div>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="main-area">
+
+        <header class="topbar">
+            <div>
+                <span class="breadcrumb">Universidad / Portal estudiantil</span>
+                <h3>Portal Académico</h3>
+            </div>
+
+            <div class="user-info">
+                <div class="notification">♧</div>
+                <div class="avatar">ES</div>
+                <div>
+                    <strong>Estudiante</strong>
+                    <small>Cuenta universitaria</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <!-- PANEL DE CONTROL -->
+            <section id="inicio" class="pagina">
+
+                <div class="welcome">
+                    <div>
+                        <span class="tag">SISTEMA DE GESTIÓN UNIVERSITARIA</span>
+                        <h1>Bienvenido a UniCampus</h1>
+                        <p>Consulta tu información académica y administra tus actividades universitarias.</p>
+                    </div>
+                    <div class="welcome-icon">⌘</div>
+                </div>
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Resumen académico</h2>
+                        <p>Información general de tu actividad universitaria.</p>
+                    </div>
+                    <span class="period">II Semestre · 2026</span>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon blue">▤</div>
+                        <span>Cursos matriculados</span>
+                        <h2>04</h2>
+                        <small>Asignaturas activas</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon green">✓</div>
+                        <span>Promedio general</span>
+                        <h2>90.5</h2>
+                        <small>Rendimiento académico</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon purple">◷</div>
+                        <span>Horas semanales</span>
+                        <h2>24</h2>
+                        <small>Clases programadas</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon orange">♧</div>
+                        <span>Notificaciones</span>
+                        <h2>03</h2>
+                        <small>Comunicados pendientes</small>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+
+                    <div class="panel">
+                        <div class="panel-header">
+                            <div>
+                                <h3>Progreso académico</h3>
+                                <p>Avance general del periodo</p>
+                            </div>
+                            <span class="status-badge">En progreso</span>
+                        </div>
+
+                        <div class="progress-info">
+                            <strong>75%</strong>
+                            <span>Progreso estimado</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+
+                        <div class="progress-details">
+                            <span>Actividades completadas</span>
+                            <strong>15 de 20</strong>
+                        </div>
+
+                        <div class="progress-details">
+                            <span>Periodo académico</span>
+                            <strong>II Semestre 2026</strong>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-header">
+                            <div>
+                                <h3>Información del estudiante</h3>
+                                <p>Datos de la cuenta universitaria</p>
+                            </div>
+                        </div>
+
+                        <div class="student-data">
+                            <div><span>Nombre</span><strong>Estudiante de ejemplo</strong></div>
+                            <div><span>Código</span><strong>2026001</strong></div>
+                            <div><span>Carrera</span><strong>Ingeniería en Sistemas</strong></div>
+                            <div><span>Estado</span><strong class="text-green">Activo</strong></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="dashboard-grid">
+
+                    <div class="panel">
+                        <div class="panel-header">
+                            <div>
+                                <h3>Actividad reciente</h3>
+                                <p>Últimos movimientos académicos</p>
+                            </div>
+                        </div>
+
+                        <div class="activity">
+                            <span class="activity-point blue-point"></span>
+                            <div>
+                                <strong>Calificación publicada</strong>
+                                <p>Se registró una nueva calificación en Programación.</p>
+                                <small>Hoy · 09:30 a. m.</small>
+                            </div>
+                        </div>
+
+                        <div class="activity">
+                            <span class="activity-point green-point"></span>
+                            <div>
+                                <strong>Curso actualizado</strong>
+                                <p>Se actualizó la información de Matemáticas.</p>
+                                <small>Ayer · 02:15 p. m.</small>
+                            </div>
+                        </div>
+
+                        <div class="activity">
+                            <span class="activity-point orange-point"></span>
+                            <div>
+                                <strong>Nuevo comunicado</strong>
+                                <p>Se publicó información del calendario académico.</p>
+                                <small>Hace 2 días</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-header">
+                            <div>
+                                <h3>Notificaciones</h3>
+                                <p>Avisos importantes</p>
+                            </div>
+                        </div>
+
+                        <div class="notice">
+                            <strong>Calendario académico</strong>
+                            <p>Consulta las fechas de las próximas evaluaciones.</p>
+                        </div>
+
+                        <div class="notice">
+                            <strong>Prematrícula</strong>
+                            <p>Revisa la oferta de cursos disponibles.</p>
+                        </div>
+
+                        <div class="notice">
+                            <strong>Información institucional</strong>
+                            <p>Mantente al día con los comunicados universitarios.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- CURSOS -->
+            <section id="cursos" class="pagina oculto">
+                <div class="page-title">
+                    <h1>Mis cursos</h1>
+                    <p>Administración de asignaturas matriculadas.</p>
+                </div>
+
+                <div class="course-grid">
+                    <div class="course-card">
+                        <span class="course-code">INF-101</span>
+                        <h3>Programación</h3>
+                        <p>Profesor: Carlos Ramírez</p>
+                        <div class="course-progress">
+                            <span>Progreso</span><strong>85%</strong>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill width-85"></div></div>
+                        <span class="status-badge">Activo</span>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-code">MAT-102</span>
+                        <h3>Matemáticas</h3>
+                        <p>Profesora: Ana López</p>
+                        <div class="course-progress">
+                            <span>Progreso</span><strong>70%</strong>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill width-70"></div></div>
+                        <span class="status-badge">Activo</span>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-code">ING-103</span>
+                        <h3>Inglés</h3>
+                        <p>Profesora: María Castro</p>
+                        <div class="course-progress">
+                            <span>Progreso</span><strong>90%</strong>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill width-90"></div></div>
+                        <span class="status-badge">Activo</span>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-code">TIC-104</span>
+                        <h3>Tecnologías de Información</h3>
+                        <p>Profesor: José Vargas</p>
+                        <div class="course-progress">
+                            <span>Progreso</span><strong>65%</strong>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill width-65"></div></div>
+                        <span class="status-badge">Activo</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CALIFICACIONES -->
+            <section id="notas" class="pagina oculto">
+                <div class="page-title">
+                    <h1>Calificaciones</h1>
+                    <p>Consulta tu rendimiento en las asignaturas.</p>
+                </div>
+
+                <div class="panel">
+                    <h3>Registro de calificaciones</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Asignatura</th>
+                                <th>Nota</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>INF-101</td><td>Programación</td><td>95</td><td><span class="approved">Aprobado</span></td></tr>
+                            <tr><td>MAT-102</td><td>Matemáticas</td><td>88</td><td><span class="approved">Aprobado</span></td></tr>
+                            <tr><td>ING-103</td><td>Inglés</td><td>90</td><td><span class="approved">Aprobado</span></td></tr>
+                            <tr><td>TIC-104</td><td>Tecnologías de Información</td><td>89</td><td><span class="approved">Aprobado</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- PREMATRÍCULA -->
+            <section id="prematricula" class="pagina oculto">
+                <div class="page-title">
+                    <h1>Prematrícula</h1>
+                    <p>Selección de asignaturas para el próximo periodo académico.</p>
+                </div>
+
+                <div class="panel">
+                    <h3>Solicitud de prematrícula</h3>
+                    <p>Selecciona una asignatura de la oferta académica.</p>
+
+                    <label for="curso">Asignatura disponible</label>
+                    <select id="curso">
+                        <option value="">Seleccionar asignatura</option>
+                        <option>Programación avanzada</option>
+                        <option>Bases de datos</option>
+                        <option>Redes informáticas</option>
+                        <option>Inglés técnico</option>
+                    </select>
+
+                    <button class="primary-btn" onclick="prematricular()">
+                        Registrar solicitud
+                    </button>
+
+                    <div id="resultado" class="result-box"></div>
+                </div>
+
+                <div class="panel">
+                    <h3>Información del proceso</h3>
+                    <p>La prematrícula es una solicitud de selección de cursos. La matrícula definitiva requiere validación institucional.</p>
+                </div>
+            </section>
+
+            <!-- HORARIO -->
+            <section id="horario" class="pagina oculto">
+                <div class="page-title">
+                    <h1>Horario académico</h1>
+                    <p>Distribución semanal de las clases.</p>
+                </div>
+
+                <div class="panel">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Día</th>
+                                <th>Asignatura</th>
+                                <th>Hora</th>
+                                <th>Modalidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Lunes</td><td>Programación</td><td>08:00 - 10:00</td><td>Presencial</td></tr>
+                            <tr><td>Martes</td><td>Matemáticas</td><td>10:00 - 12:00</td><td>Presencial</td></tr>
+                            <tr><td>Miércoles</td><td>Inglés</td><td>09:00 - 11:00</td><td>Virtual</td></tr>
+                            <tr><td>Jueves</td><td>Tecnologías de Información</td><td>13:00 - 15:00</td><td>Presencial</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- CARNÉ -->
+            <section id="carne" class="pagina oculto">
+                <div class="page-title">
+                    <h1>Carné digital</h1>
+                    <p>Identificación del estudiante.</p>
+                </div>
+
+                <div class="digital-card">
+                    <div class="digital-card-top">
+                        <h2>UniCampus</h2>
+                        <span>IDENTIFICACIÓN UNIVERSITARIA</span>
+                    </div>
+
+                    <div class="digital-card-body">
+                        <div class="card-avatar">ES</div>
+                        <div>
+                            <small>ESTUDIANTE</small>
+                            <h2>Nombre del estudiante</h2>
+                            <p>Ingeniería en Sistemas</p>
+                        </div>
+                    </div>
+
+                    <div class="digital-card-footer">
+                        <span>CÓDIGO: 2026001</span>
+                        <span>PERIODO 2026</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <span>UniCampus · Plataforma de Gestión Académica</span>
+            <span>Versión 1.0.0 | 2026</span>
+        </footer>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
